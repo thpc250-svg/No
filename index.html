@@ -80,13 +80,13 @@ p {
 .photo-container {
   position: relative;
   width: 100%;
-  height: 50%; /* Diturunkan sedikit agar memberi ruang bagi teks di bawahnya */
-  margin: 10px 0;
+  height: 45%; /* Dikurangi lagi agar area foto tidak memakan tempat ke bawah */
+  margin: 15px 0;
 }
 .polaroid {
   background: #fff;
-  padding: 8px 8px 20px 8px; /* Diperkecil agar border putih polaroid lebih proporsional */
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  padding: 6px 6px 16px 6px; /* Bingkai putih diperkecil agar foto terlihat rapi */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
   position: absolute;
   border-radius: 4px;
 }
@@ -96,21 +96,21 @@ p {
   object-fit: cover;
 }
 
-/* Ukuran tumpukan gambar dioptimalkan agar menyebar dan tidak menyatu */
-.layout-2a .img1 { width: 130px; height: 160px; left: 15px; top: 15px; transform: rotate(-8deg); z-index: 1; }
-.layout-2a .img2 { width: 130px; height: 160px; right: 15px; bottom: 15px; transform: rotate(6deg); z-index: 2; }
+/* UKURAN LEBIH KECIL & JARAK JAUH LEBIH RENGGANG */
+.layout-2a .img1 { width: 115px; height: 145px; left: 10px; top: 10px; transform: rotate(-10deg); z-index: 1; }
+.layout-2a .img2 { width: 115px; height: 145px; right: 10px; bottom: 10px; transform: rotate(8deg); z-index: 2; }
 
-.layout-2b .img1 { width: 130px; height: 160px; right: 15px; top: 15px; transform: rotate(7deg); z-index: 1; }
-.layout-2b .img2 { width: 130px; height: 160px; left: 15px; bottom: 15px; transform: rotate(-6deg); z-index: 2; }
+.layout-2b .img1 { width: 115px; height: 145px; right: 10px; top: 10px; transform: rotate(10deg); z-index: 1; }
+.layout-2b .img2 { width: 115px; height: 145px; left: 10px; bottom: 10px; transform: rotate(-8deg); z-index: 2; }
 
-.layout-3a .img1 { width: 110px; height: 135px; left: 15px; top: 5px; transform: rotate(-10deg); z-index: 1; }
-.layout-3a .img2 { width: 110px; height: 135px; right: 15px; top: 20px; transform: rotate(8deg); z-index: 2; }
-.layout-3a .img3 { width: 115px; height: 140px; left: 50%; transform: translateX(-50%) rotate(-3deg); bottom: 5px; z-index: 3; }
+.layout-3a .img1 { width: 100px; height: 125px; left: 10px; top: 5px; transform: rotate(-12deg); z-index: 1; }
+.layout-3a .img2 { width: 100px; height: 125px; right: 10px; top: 25px; transform: rotate(10deg); z-index: 2; }
+.layout-3a .img3 { width: 105px; height: 130px; left: 50%; transform: translateX(-50%) rotate(-4deg); bottom: 0px; z-index: 3; }
 
-.layout-3b .img1 { width: 110px; height: 135px; right: 15px; top: 5px; transform: rotate(9deg); z-index: 1; }
-.layout-3b .img2 { width: 110px; height: 135px; left: 15px; top: 20px; transform: rotate(-8deg); z-index: 2; }
-.layout-3b .img3 { width: 115px; height: 140px; left: 50%; transform: translateX(-50%) rotate(3deg); bottom: 5px; z-index: 3; }
-  
+.layout-3b .img1 { width: 100px; height: 125px; right: 10px; top: 5px; transform: rotate(12deg); z-index: 1; }
+.layout-3b .img2 { width: 100px; height: 125px; left: 10px; top: 25px; transform: rotate(-10deg); z-index: 2; }
+.layout-3b .img3 { width: 105px; height: 130px; left: 50%; transform: translateX(-50%) rotate(4deg); bottom: 0px; z-index: 3; }
+                  
 /* TOMBOL NAVIGASI */
 .btn {
   padding: 10px 22px; border:none; border-radius:25px;
