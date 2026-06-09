@@ -365,7 +365,7 @@ function checkPin() {
   const inputs = document.querySelectorAll('#slide1 input');
   const pin = [...inputs].map(i => i.value).join('');
   
-  if(pin === "15626") {
+  if(pin === "15606") {
     animateSlides(1, 2);
     document.getElementById('errorMsg').innerText = "";
     if(!isPlaying) toggleMusic(); 
